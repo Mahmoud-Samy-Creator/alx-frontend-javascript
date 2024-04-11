@@ -9,33 +9,24 @@ export default class Car {
     return this._brand;
   }
 
+  set brand(value) {
+    this._brand = value;
+  }
+
   get motor() {
     return this._motor;
+  }
+
+  set motor(value) {
+    this._motor = value;
   }
 
   get color() {
     return this._color;
   }
 
-  set brand(brand) {
-    if (typeof brand !== 'string' && !(brand instanceof String)) {
-      throw TypeError('Brand must be a string');
-    }
-    this._brand = brand;
-  }
-
-  set motor(motor) {
-    if (typeof brand !== 'string' && !(motor instanceof String)) {
-      throw TypeError('Motor must be a string');
-    }
-    this._motor = motor;
-  }
-
-  set color(color) {
-    if (typeof color !== 'string' && !(color instanceof String)) {
-      throw TypeError('Color must be a string');
-    }
-    this._color = color;
+  set color(value) {
+    this._color = value;
   }
 
   static get [Symbol.species]() {
