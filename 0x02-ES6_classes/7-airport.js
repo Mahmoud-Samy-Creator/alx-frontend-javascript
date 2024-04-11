@@ -1,4 +1,4 @@
-class Airport {
+export default class Airport {
   constructor(name, code) {
     this.name = name;
     this.code = code;
@@ -30,7 +30,3 @@ class Airport {
     return this._code;
   }
 }
-
-const airportSF = new Airport('San Francisco Airport', 'SFO');
-console.log(airportSF);
-console.log(airportSF.toString());
