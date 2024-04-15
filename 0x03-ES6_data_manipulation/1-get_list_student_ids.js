@@ -1,13 +1,10 @@
 export default function getListStudentIds(list) {
-  const newArray = [];
+  let newArray = [];
 
   if (!Array.isArray(list)) {
     return newArray;
   }
 
-  for (const obj of list) {
-    newArray.push(obj.id);
-  }
-
+  newArray = list.map((student) => student.id);
   return newArray;
 }
