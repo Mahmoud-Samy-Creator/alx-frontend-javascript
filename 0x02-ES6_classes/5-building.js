@@ -1,7 +1,7 @@
 export default class Building {
   constructor(sqft) {
     /**
-     * Consider this class as an abstract class.
+     * Consider this class as an abstract class. // (this.constructor !== Building)
      * Make sure that any class that extends from it should implement a method:
      * evacuationWarningMessage.
      * If a class that extends from it does not have a evacuationWarningMessage method,
